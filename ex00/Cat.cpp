@@ -30,7 +30,6 @@ void Cat::setType(const std::string& type)
 	this->_type = type;
 }
 
-
 void	Cat::makeSound(void) const
 {
 	std::cout << "nya-nya-" << std::endl;
@@ -38,5 +37,5 @@ void	Cat::makeSound(void) const
 
 Cat::~Cat(void)
 {
-	std::cout << _type << ": Cat destroy" << std::endl;
+	std::cout << "Cat destroy" << std::endl;
 }

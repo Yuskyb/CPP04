@@ -30,5 +30,5 @@ void	Cat::makeSound(void) const
 Cat::~Cat(void)
 {
 	delete _brain;
-	std::cout << _type << ": Cat destroy" << std::endl;
+	std::cout << "Cat destroy" << std::endl;
 }

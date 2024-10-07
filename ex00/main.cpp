@@ -4,16 +4,15 @@
 
 int main()
 {
-const Animal* meta = new Animal();
-const Animal* j = new Dog();
-const Animal* i = new Cat();
-std::cout << j->getType() << " " << std::endl;
-std::cout << i->getType() << " " << std::endl;
-i->makeSound(); //will output the cat sound!
-j->makeSound();
-meta->makeSound();
-delete meta;
-delete j;
-delete i;
-return 0;
+	Animal *ani = new Animal();
+	Animal *dog = new Dog();
+	Animal *cat = new Cat();
+
+	ani->makeSound();
+	dog->makeSound();
+	cat->makeSound();
+	delete ani;
+	delete dog;
+	delete cat;
+	return (0);
 }
